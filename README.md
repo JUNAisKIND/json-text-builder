@@ -30,10 +30,10 @@ JM(...).r() : TextComponent // TextComponent 로 빌드
 * SUGGEST_COMMAND : 클릭시 입력칸에 해당 커맨드 자동 작성
 
 * ### Only HoverEvent
-- SHOW_ACHIEVEMENT : 발전과제 띄우기
-- SHOW_ENTITY : 엔티티 띄우기
-- SHOW_ITEM : 아이템 띄우기
-- SHOW_TEXT : 텍스트 띄우기
+* SHOW_ACHIEVEMENT : 발전과제 띄우기
+* SHOW_ENTITY : 엔티티 띄우기
+* SHOW_ITEM : 아이템 띄우기
+* SHOW_TEXT : 텍스트 띄우기
 ---
 
 ---
