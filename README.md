@@ -39,24 +39,24 @@ JM(...).r() : TextComponent // TextComponent 로 빌드
 ---
 ## Examples
 
-###1. 그냥 hellow 텍스트
+### 1. 그냥 hellow 텍스트
 ```
 JsonMessage.sendMessage(Player player, new JM("hellow")
 ```
-###2. 클릭시 /help명령어 작동, 마우스 올리면 클릭! 메세지를 보이는 haha 텍스트
+### 2. 클릭시 /help명령어 작동, 마우스 올리면 클릭! 메세지를 보이는 haha 텍스트
 ```
 JsonMessage.sendMessage(Player player,
     new JM("haha", new ClickEvent(Action.RUN_COMMAND, "/help"), new HoverEvent(Action.SHOW_TEXT, "클릭!"))
   )
 ```
-###1번 + 2번
+### 1번 + 2번
 ```
 JsonMessage.sendMessage(Player player,
     new JM("hellow"),
     new JM("haha", new ClickEvent(Action.RUN_COMMAND, "/help"), new HoverEvent(Action.SHOW_TEXT, "클릭!"))
   )
 ```
-###책(클릭시 2번째 페이지로 가는 텍스트)
+### 책(클릭시 2번째 페이지로 가는 텍스트)
 ```
 ItemStack item = new ItemStack(Material.WRITTEN_BOOK)
 BookMeta meta = (BookMeta) item.getItemMeta();
