@@ -2,6 +2,9 @@ plugins {
     java
 }
 
+group = "org.junaiskind"
+version = "1.0.0"
+
 repositories {
     mavenCentral()
     maven(url = "https://papermc.io/repo/repository/maven-public/")
