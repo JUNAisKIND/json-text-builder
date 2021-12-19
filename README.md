@@ -56,4 +56,11 @@ JsonMessage.sendMessage(Player player,
     new JM("haha", new ClickEvent(Action.RUN_COMMAND, "/help"), new HoverEvent(Action.SHOW_TEXT, "클릭!"))
   )
 ```
+###책(클릭시 2번째 페이지로 가는 텍스트)
+```
+ItemStack item = new ItemStack(Material.WRITTEN_BOOK)
+BookMeta meta = (BookMeta) item.getItemMeta();
+meta.spigot().addPage(new BaseComponent[]{new JM("TEXT", new ClickEvent(Action.CHANGE_PAGE, "2"), null).r()});
+item.setItemMeta(meta);
+```
 ---
