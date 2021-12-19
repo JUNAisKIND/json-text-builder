@@ -12,10 +12,12 @@ public class JsonMessage {
     public static void sendMessage(Player player, BaseComponent mainComponent, BaseComponent...extraComponent) {
         BaseComponent component = mainComponent.duplicate();
         for(BaseComponent c : extraComponent) component.addExtra(c);
-        player.sendMessage(ChatMessageType.CHAT, component);
+        sendMessage(player, component);
     }
 
-    public static void sendMessage(Player player, JM mainJM, JM...extra) {
-
+    public static void sendMessage(Player player, JM mainJM, JM...extraJM) {
+        BaseComponent component = mainJM.r().duplicate();
+        for(JM j : extraJM) component.addExtra(j.r());
+        sendMessage(player, component);
     }
 }
