@@ -1,6 +1,6 @@
-name: sample-plugin
-main: org.github.junaiskind.plugin.Main
+name: json-text-builder-api
+main: com.github.junaiskind.plugin.Main
 version: 1.0.0
 api-version: 1.17
 author: JUNAisKIND
-description: This plugin works for ""
+description: This plugin works nothing
