@@ -2,7 +2,7 @@ plugins {
     java
 }
 
-group = "org.junaiskind"
+group = "com.github.junaiskind"
 version = "1.0.0"
 
 repositories {
