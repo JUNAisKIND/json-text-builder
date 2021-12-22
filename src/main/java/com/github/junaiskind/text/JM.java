@@ -10,7 +10,7 @@ import net.md_5.bungee.api.chat.TextComponent;
 
 public class JM {
 
-    private TextComponent textComponent;
+    private final TextComponent textComponent;
 
     public JM(String text) {
         textComponent = new TextComponent(text);
