@@ -1,0 +1,6 @@
+name: json-text-builder
+main: org.github.junaiskind.text.JM
+version: 1.0.0
+api-version: 1.17
+author: JUNAisKIND
+description: This plugin works for ""

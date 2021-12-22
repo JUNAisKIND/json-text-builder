@@ -10,16 +10,7 @@ repositories {
     maven(url = "https://papermc.io/repo/repository/maven-public/")
 }
 
-allprojects {
-    repositories {
-        jcenter()
-        maven("https://jitpack.io")
-    }
-}
-
 dependencies {
-
-    implementation("com.github.junaiskind:json-text-builder:1.0.0")
 
     testImplementation("org.junit.jupiter:junit-jupiter-api:5.6.0")
     testRuntimeOnly("org.junit.jupiter:junit-jupiter-engine")
