@@ -10,7 +10,7 @@ java {
 }
 
 repositories {
-    mavenCentral()
+    mavenLocal()
     maven(url = "https://papermc.io/repo/repository/maven-public/")
 }
 
