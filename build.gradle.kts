@@ -3,6 +3,9 @@ plugins {
     `maven-publish`
 }
 
+group = "com.github.junaiskind"
+version = "1.0.7"
+
 java {
     toolchain {
         languageVersion.set(JavaLanguageVersion.of(17))
