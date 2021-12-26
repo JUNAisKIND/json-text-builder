@@ -4,7 +4,7 @@ plugins {
 }
 
 group = "com.github.junaiskind"
-version = "1.0.10"
+version = "1.0.11"
 
 java {
     toolchain {
@@ -12,9 +12,19 @@ java {
     }
 }
 
+buildscript {
+    repositories {
+        jcenter()
+    }
+    dependencies {
+        classpath("com.github.JUNAisKIND:json-text-builder:${version}")
+    }
+}
+
 repositories {
     mavenLocal()
     maven(url = "https://papermc.io/repo/repository/maven-public/")
+    maven(url = "https://jitpack.io")
 }
 
 dependencies {
