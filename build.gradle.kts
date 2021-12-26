@@ -4,20 +4,11 @@ plugins {
 }
 
 group = "com.github.junaiskind"
-version = "1.0.11"
+version = "1.0.12"
 
 java {
     toolchain {
         languageVersion.set(JavaLanguageVersion.of(17))
-    }
-}
-
-buildscript {
-    repositories {
-        jcenter()
-    }
-    dependencies {
-        classpath("com.github.JUNAisKIND:json-text-builder:${version}")
     }
 }
 
