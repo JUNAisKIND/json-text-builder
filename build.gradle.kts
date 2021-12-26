@@ -4,7 +4,7 @@ plugins {
 }
 
 group = "com.github.junaiskind"
-version = "1.0.7"
+version = "1.0.8"
 
 java {
     toolchain {
@@ -27,4 +27,15 @@ dependencies {
 
 tasks.getByName<Test>("test") {
     useJUnitPlatform()
+}
+
+publishing {
+    publications {
+        create("maven_public", MavenPublication::class) {
+            groupId = group.toString()
+            artifactId = "library"
+            version = version
+            from(components.getByName("java"))
+        }
+    }
 }
