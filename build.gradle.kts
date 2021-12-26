@@ -33,7 +33,7 @@ publishing {
     publications {
         create("maven_public", MavenPublication::class) {
             groupId = group.toString()
-            artifactId = "library"
+            artifactId = "json-text-builder"
             version = version
             from(components.getByName("java"))
         }
